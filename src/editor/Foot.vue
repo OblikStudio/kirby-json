@@ -8,9 +8,9 @@
           <k-input
             v-model="type"
             :options="[
-              { value: 'object', text: $t('Object') },
-              { value: 'array', text: $t('Array') },
-              { value: 'value', text: $t('Value') }
+              { value: 'object', text: $t('oblik.json.object') },
+              { value: 'array', text: $t('oblik.json.array') },
+              { value: 'value', text: $t('oblik.json.value') }
             ]"
             type="radio"
           />
@@ -18,11 +18,7 @@
       </td>
 
       <td class="k-structure-table-option">
-        <k-button
-          :tooltip="$t('add')"
-          icon="add"
-          @click="$emit('add', type)"
-        />
+        <k-button icon="add" @click="$emit('add', type)" />
       </td>
     </tr>
   </tfoot>
@@ -36,7 +32,7 @@ export default {
       default: 1
     }
   },
-  data: function () {
+  data () {
     return {
       type: 'value'
     }

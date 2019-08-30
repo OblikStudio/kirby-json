@@ -7,7 +7,7 @@
       <thead v-if="list.length">
         <tr>
           <th class="k-structure-table-index">#</th>
-          <th class="k-structure-table-column">{{ $t('value') }}</th>
+          <th class="k-structure-table-column">{{ $t('oblik.json.value') }}</th>
           <th></th>
         </tr>
       </thead>
@@ -21,9 +21,7 @@
         <tr v-for="(entry, index) in list" :key="entry.key">
           <td class="k-structure-table-index">
             <k-sort-handle v-if="settings.isSortable" />
-            <span class="k-structure-table-index-number">
-              {{ index }}
-            </span>
+            <span class="k-structure-table-index-number">{{ index }}</span>
           </td>
 
           <td class="k-structure-table-column">
@@ -35,20 +33,19 @@
                 <span v-else>{{ entry.value }}</span>
               </template>
               <k-button v-else icon="open" @click="$emit('open', entry.key)">
-                {{ $t(isArray(entry.value) ? 'array' : 'object') }}
-                ({{ keys(entry.value).length }} {{ $t('values') }})
+                {{ $t('oblik.json.' + (isArray(entry.value) ? 'array' : 'object')) }}
+                ({{ keys(entry.value).length }} {{ $t('oblik.json.values') }})
               </k-button>
             </p>
           </td>
 
           <td class="k-structure-table-option">
             <k-button
-              :tooltip="$t('remove')"
               icon="remove"
-              @click="remove(entry.key)"
               :class="{
                 'k-je-not-allowed': !settings.isMutatable
               }"
+              @click="remove(entry.key)"
             />
           </td>
         </tr>
@@ -70,14 +67,14 @@ export default {
     value: Object,
     settings: Object
   },
-  data: function () {
+  data () {
     return {
       list: null,
       updatingList: false
     }
   },
   computed: {
-    dragOptions: function () {
+    dragOptions () {
       return {
         disabled: !this.settings.isSortable,
         fallbackClass: 'k-sortable-row-fallback'
@@ -87,32 +84,30 @@ export default {
   methods: {
     keys: Object.keys,
     isArray: Array.isArray,
-    generateEntryId: function () {
+    generateEntryId () {
       return this.list.length
     },
-    serialize: function () {
-      return this.list.map(function (entry) {
-        return entry.value
-      })
+    serialize () {
+      return this.list.map(entry => entry.value)
     },
-    updateList: function (object) {
+    updateList (object) {
       this.updatingList = true
       this.list = []
 
       if (this.value && typeof this.value === 'object') {
-        this.list = Object.keys(this.value).map(function (key) {
+        this.list = Object.keys(this.value).map(key => {
           return {
             key: key,
             value: this.value[key]
           }
-        }.bind(this))
+        })
       }
 
-      this.$nextTick(function () {
+      this.$nextTick(() => {
         this.updatingList = false
-      }.bind(this))
+      })
     },
-    add: function (type) {
+    add (type) {
       var entry = {
         key: this.generateEntryId()
       }
@@ -127,11 +122,9 @@ export default {
         this.list.push(entry)
       }
     },
-    remove: function (key) {
+    remove (key) {
       if (this.settings.isMutatable) {
-        this.list = this.list.filter(function (item) {
-          return item.key !== key
-        })
+        this.list = this.list.filter(item => item.key !== key)
       }
     }
   },
@@ -139,13 +132,13 @@ export default {
     value: {
       deep: true,
       immediate: true,
-      handler: function (value) {
+      handler (value) {
         this.updateList(value)
       }
     },
     list: {
       deep: true,
-      handler: function (value) {
+      handler (value) {
         if (!this.updatingList) {
           this.$emit('input', this.serialize())
         }

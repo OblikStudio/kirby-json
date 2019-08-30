@@ -15,9 +15,9 @@
     </header>
 
     <component
-      :is="isArray(currentObject) ? 'ArrayTable' : 'ObjectTable'"
+      :is="isArray(object) ? 'ArrayTable' : 'ObjectTable'"
       :settings="settings"
-      :value="currentObject"
+      v-model="object"
       @input="input"
       @open="openKey"
     ></component>
@@ -58,11 +58,14 @@ export default {
     }
   },
   computed: {
-    currentObject: function () {
+    location: function () {
+      var key = null
+      var parent = null
       var object = this.data
 
       for (let i = 0; i < this.path.length; i++) {
-        let key = this.path[i]
+        key = this.path[i]
+        parent = object
 
         if (object[key]) {
           object = object[key]
@@ -72,7 +75,23 @@ export default {
         }
       }
 
-      return object
+      return (key && parent) ? { key, parent } : null
+    },
+    object: {
+      get () {
+        if (this.location) {
+          return this.location.parent[this.location.key]
+        } else {
+          return this.data
+        }
+      },
+      set (value) {
+        if (this.location) {
+          this.location.parent[this.location.key] = value
+        } else {
+          this.data = value
+        }
+      }
     },
     displayPath: function () {
       var path = this.path.map((name, index) => {
@@ -92,30 +111,20 @@ export default {
   },
   methods: {
     isArray: Array.isArray,
-    openKey: function (key) {
+    openKey (key) {
       this.path.push(key)
     },
-    openPath: function (index) {
+    openPath (index) {
       this.path.splice(index + 1)
     },
-    input: function (value) {
-      var parentPath = this.path.slice()
-      var childKey = parentPath.pop()
-      var parent = parentPath.length ? get(this.data, parentPath) : this.data
-
-      if (parent && childKey) {
-        parent[childKey] = value
-      } else {
-        this.data = value
-      }
-
+    input (value) {
       this.$emit('input', this.data)
     }
   },
   watch: {
     value: {
       immediate: true,
-      handler: function (value) {
+      handler (value) {
         this.data = cloneDeep(value)
       }
     }
@@ -132,11 +141,11 @@ export default {
   display: inline-block;
 }
 
-.k-je-separator {
-  content: '/';
-  margin: 0 8px;
-  font-weight: lighter;
-}
+  .k-je-separator {
+    content: '/';
+    margin: 0 8px;
+    font-weight: lighter;
+  }
 
 .k-je-not-editable {
   cursor: default;

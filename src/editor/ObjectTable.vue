@@ -7,8 +7,8 @@
       <thead v-if="list.length">
         <tr>
           <th class="k-structure-table-index">#</th>
-          <th class="k-structure-table-column k-je-column-header-key">{{ $t('key') }}</th>
-          <th class="k-structure-table-column">{{ $t('value') }}</th>
+          <th class="k-structure-table-column k-je-column-header-key">{{ $t('oblik.json.key') }}</th>
+          <th class="k-structure-table-column">{{ $t('oblik.json.value') }}</th>
           <th></th>
         </tr>
       </thead>
@@ -22,9 +22,7 @@
         <tr v-for="(entry, index) in list" :key="index">
           <td class="k-structure-table-index">
             <k-sort-handle v-if="settings.isSortable" />
-            <span class="k-structure-table-index-number">
-              {{ index + 1 }}
-            </span>
+            <span class="k-structure-table-index-number">{{ index + 1 }}</span>
           </td>
 
           <td class="k-structure-table-column">
@@ -45,7 +43,7 @@
                 <span v-else>{{ entry.value }}</span>
               </template>
               <k-button v-else icon="open" @click="$emit('open', entry.key)">
-                {{ $t(isArray(entry.value) ? 'array' : 'object') }}
+                {{ $t('oblik.json.' + (isArray(entry.value) ? 'array' : 'object')) }}
                 ({{ keys(entry.value).length }} {{ $t('values') }})
               </k-button>
             </p>
@@ -53,12 +51,11 @@
 
           <td class="k-structure-table-option">
             <k-button
-              :tooltip="$t('remove')"
               icon="remove"
-              @click="remove(entry.key)"
               :class="{
                 'k-je-not-allowed': !settings.isMutatable
               }"
+              @click="remove(entry.key)"
             />
           </td>
         </tr>
@@ -75,13 +72,13 @@ import ArrayTable from './ArrayTable.vue'
 export default {
   extends: ArrayTable,
   methods: {
-    generateEntryId: function () {
+    generateEntryId () {
       return 'key' + (Math.floor(Math.random() * 9000) + 1000)
     },
-    serialize: function (type) {
+    serialize (type) {
       var serialized = {}
 
-      this.list.forEach(function (entry) {
+      this.list.forEach((entry) => {
         if (typeof entry.key !== 'undefined') {
           serialized[entry.key] = entry.value
         }
