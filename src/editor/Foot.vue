@@ -43,3 +43,19 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+.k-je-foot {
+	background: #fafafa;
+  text-align: center;
+
+  td {
+    border-top: 1px solid #efefef;
+  }
+
+  .k-radio-input li {
+		display: inline-block;
+		margin-right: 25px;
+	}
+}
+</style>

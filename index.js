@@ -34338,7 +34338,74 @@ var _zipWith = _interopRequireDefault(require("./zipWith.js"));
 var _lodashDefault = _interopRequireDefault(require("./lodash.default.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./add.js":"../node_modules/lodash-es/add.js","./after.js":"../node_modules/lodash-es/after.js","./ary.js":"../node_modules/lodash-es/ary.js","./assign.js":"../node_modules/lodash-es/assign.js","./assignIn.js":"../node_modules/lodash-es/assignIn.js","./assignInWith.js":"../node_modules/lodash-es/assignInWith.js","./assignWith.js":"../node_modules/lodash-es/assignWith.js","./at.js":"../node_modules/lodash-es/at.js","./attempt.js":"../node_modules/lodash-es/attempt.js","./before.js":"../node_modules/lodash-es/before.js","./bind.js":"../node_modules/lodash-es/bind.js","./bindAll.js":"../node_modules/lodash-es/bindAll.js","./bindKey.js":"../node_modules/lodash-es/bindKey.js","./camelCase.js":"../node_modules/lodash-es/camelCase.js","./capitalize.js":"../node_modules/lodash-es/capitalize.js","./castArray.js":"../node_modules/lodash-es/castArray.js","./ceil.js":"../node_modules/lodash-es/ceil.js","./chain.js":"../node_modules/lodash-es/chain.js","./chunk.js":"../node_modules/lodash-es/chunk.js","./clamp.js":"../node_modules/lodash-es/clamp.js","./clone.js":"../node_modules/lodash-es/clone.js","./cloneDeep.js":"../node_modules/lodash-es/cloneDeep.js","./cloneDeepWith.js":"../node_modules/lodash-es/cloneDeepWith.js","./cloneWith.js":"../node_modules/lodash-es/cloneWith.js","./commit.js":"../node_modules/lodash-es/commit.js","./compact.js":"../node_modules/lodash-es/compact.js","./concat.js":"../node_modules/lodash-es/concat.js","./cond.js":"../node_modules/lodash-es/cond.js","./conforms.js":"../node_modules/lodash-es/conforms.js","./conformsTo.js":"../node_modules/lodash-es/conformsTo.js","./constant.js":"../node_modules/lodash-es/constant.js","./countBy.js":"../node_modules/lodash-es/countBy.js","./create.js":"../node_modules/lodash-es/create.js","./curry.js":"../node_modules/lodash-es/curry.js","./curryRight.js":"../node_modules/lodash-es/curryRight.js","./debounce.js":"../node_modules/lodash-es/debounce.js","./deburr.js":"../node_modules/lodash-es/deburr.js","./defaultTo.js":"../node_modules/lodash-es/defaultTo.js","./defaults.js":"../node_modules/lodash-es/defaults.js","./defaultsDeep.js":"../node_modules/lodash-es/defaultsDeep.js","./defer.js":"../node_modules/lodash-es/defer.js","./delay.js":"../node_modules/lodash-es/delay.js","./difference.js":"../node_modules/lodash-es/difference.js","./differenceBy.js":"../node_modules/lodash-es/differenceBy.js","./differenceWith.js":"../node_modules/lodash-es/differenceWith.js","./divide.js":"../node_modules/lodash-es/divide.js","./drop.js":"../node_modules/lodash-es/drop.js","./dropRight.js":"../node_modules/lodash-es/dropRight.js","./dropRightWhile.js":"../node_modules/lodash-es/dropRightWhile.js","./dropWhile.js":"../node_modules/lodash-es/dropWhile.js","./each.js":"../node_modules/lodash-es/each.js","./eachRight.js":"../node_modules/lodash-es/eachRight.js","./endsWith.js":"../node_modules/lodash-es/endsWith.js","./entries.js":"../node_modules/lodash-es/entries.js","./entriesIn.js":"../node_modules/lodash-es/entriesIn.js","./eq.js":"../node_modules/lodash-es/eq.js","./escape.js":"../node_modules/lodash-es/escape.js","./escapeRegExp.js":"../node_modules/lodash-es/escapeRegExp.js","./every.js":"../node_modules/lodash-es/every.js","./extend.js":"../node_modules/lodash-es/extend.js","./extendWith.js":"../node_modules/lodash-es/extendWith.js","./fill.js":"../node_modules/lodash-es/fill.js","./filter.js":"../node_modules/lodash-es/filter.js","./find.js":"../node_modules/lodash-es/find.js","./findIndex.js":"../node_modules/lodash-es/findIndex.js","./findKey.js":"../node_modules/lodash-es/findKey.js","./findLast.js":"../node_modules/lodash-es/findLast.js","./findLastIndex.js":"../node_modules/lodash-es/findLastIndex.js","./findLastKey.js":"../node_modules/lodash-es/findLastKey.js","./first.js":"../node_modules/lodash-es/first.js","./flatMap.js":"../node_modules/lodash-es/flatMap.js","./flatMapDeep.js":"../node_modules/lodash-es/flatMapDeep.js","./flatMapDepth.js":"../node_modules/lodash-es/flatMapDepth.js","./flatten.js":"../node_modules/lodash-es/flatten.js","./flattenDeep.js":"../node_modules/lodash-es/flattenDeep.js","./flattenDepth.js":"../node_modules/lodash-es/flattenDepth.js","./flip.js":"../node_modules/lodash-es/flip.js","./floor.js":"../node_modules/lodash-es/floor.js","./flow.js":"../node_modules/lodash-es/flow.js","./flowRight.js":"../node_modules/lodash-es/flowRight.js","./forEach.js":"../node_modules/lodash-es/forEach.js","./forEachRight.js":"../node_modules/lodash-es/forEachRight.js","./forIn.js":"../node_modules/lodash-es/forIn.js","./forInRight.js":"../node_modules/lodash-es/forInRight.js","./forOwn.js":"../node_modules/lodash-es/forOwn.js","./forOwnRight.js":"../node_modules/lodash-es/forOwnRight.js","./fromPairs.js":"../node_modules/lodash-es/fromPairs.js","./functions.js":"../node_modules/lodash-es/functions.js","./functionsIn.js":"../node_modules/lodash-es/functionsIn.js","./get.js":"../node_modules/lodash-es/get.js","./groupBy.js":"../node_modules/lodash-es/groupBy.js","./gt.js":"../node_modules/lodash-es/gt.js","./gte.js":"../node_modules/lodash-es/gte.js","./has.js":"../node_modules/lodash-es/has.js","./hasIn.js":"../node_modules/lodash-es/hasIn.js","./head.js":"../node_modules/lodash-es/head.js","./identity.js":"../node_modules/lodash-es/identity.js","./inRange.js":"../node_modules/lodash-es/inRange.js","./includes.js":"../node_modules/lodash-es/includes.js","./indexOf.js":"../node_modules/lodash-es/indexOf.js","./initial.js":"../node_modules/lodash-es/initial.js","./intersection.js":"../node_modules/lodash-es/intersection.js","./intersectionBy.js":"../node_modules/lodash-es/intersectionBy.js","./intersectionWith.js":"../node_modules/lodash-es/intersectionWith.js","./invert.js":"../node_modules/lodash-es/invert.js","./invertBy.js":"../node_modules/lodash-es/invertBy.js","./invoke.js":"../node_modules/lodash-es/invoke.js","./invokeMap.js":"../node_modules/lodash-es/invokeMap.js","./isArguments.js":"../node_modules/lodash-es/isArguments.js","./isArray.js":"../node_modules/lodash-es/isArray.js","./isArrayBuffer.js":"../node_modules/lodash-es/isArrayBuffer.js","./isArrayLike.js":"../node_modules/lodash-es/isArrayLike.js","./isArrayLikeObject.js":"../node_modules/lodash-es/isArrayLikeObject.js","./isBoolean.js":"../node_modules/lodash-es/isBoolean.js","./isBuffer.js":"../node_modules/lodash-es/isBuffer.js","./isDate.js":"../node_modules/lodash-es/isDate.js","./isElement.js":"../node_modules/lodash-es/isElement.js","./isEmpty.js":"../node_modules/lodash-es/isEmpty.js","./isEqual.js":"../node_modules/lodash-es/isEqual.js","./isEqualWith.js":"../node_modules/lodash-es/isEqualWith.js","./isError.js":"../node_modules/lodash-es/isError.js","./isFinite.js":"../node_modules/lodash-es/isFinite.js","./isFunction.js":"../node_modules/lodash-es/isFunction.js","./isInteger.js":"../node_modules/lodash-es/isInteger.js","./isLength.js":"../node_modules/lodash-es/isLength.js","./isMap.js":"../node_modules/lodash-es/isMap.js","./isMatch.js":"../node_modules/lodash-es/isMatch.js","./isMatchWith.js":"../node_modules/lodash-es/isMatchWith.js","./isNaN.js":"../node_modules/lodash-es/isNaN.js","./isNative.js":"../node_modules/lodash-es/isNative.js","./isNil.js":"../node_modules/lodash-es/isNil.js","./isNull.js":"../node_modules/lodash-es/isNull.js","./isNumber.js":"../node_modules/lodash-es/isNumber.js","./isObject.js":"../node_modules/lodash-es/isObject.js","./isObjectLike.js":"../node_modules/lodash-es/isObjectLike.js","./isPlainObject.js":"../node_modules/lodash-es/isPlainObject.js","./isRegExp.js":"../node_modules/lodash-es/isRegExp.js","./isSafeInteger.js":"../node_modules/lodash-es/isSafeInteger.js","./isSet.js":"../node_modules/lodash-es/isSet.js","./isString.js":"../node_modules/lodash-es/isString.js","./isSymbol.js":"../node_modules/lodash-es/isSymbol.js","./isTypedArray.js":"../node_modules/lodash-es/isTypedArray.js","./isUndefined.js":"../node_modules/lodash-es/isUndefined.js","./isWeakMap.js":"../node_modules/lodash-es/isWeakMap.js","./isWeakSet.js":"../node_modules/lodash-es/isWeakSet.js","./iteratee.js":"../node_modules/lodash-es/iteratee.js","./join.js":"../node_modules/lodash-es/join.js","./kebabCase.js":"../node_modules/lodash-es/kebabCase.js","./keyBy.js":"../node_modules/lodash-es/keyBy.js","./keys.js":"../node_modules/lodash-es/keys.js","./keysIn.js":"../node_modules/lodash-es/keysIn.js","./last.js":"../node_modules/lodash-es/last.js","./lastIndexOf.js":"../node_modules/lodash-es/lastIndexOf.js","./wrapperLodash.js":"../node_modules/lodash-es/wrapperLodash.js","./lowerCase.js":"../node_modules/lodash-es/lowerCase.js","./lowerFirst.js":"../node_modules/lodash-es/lowerFirst.js","./lt.js":"../node_modules/lodash-es/lt.js","./lte.js":"../node_modules/lodash-es/lte.js","./map.js":"../node_modules/lodash-es/map.js","./mapKeys.js":"../node_modules/lodash-es/mapKeys.js","./mapValues.js":"../node_modules/lodash-es/mapValues.js","./matches.js":"../node_modules/lodash-es/matches.js","./matchesProperty.js":"../node_modules/lodash-es/matchesProperty.js","./max.js":"../node_modules/lodash-es/max.js","./maxBy.js":"../node_modules/lodash-es/maxBy.js","./mean.js":"../node_modules/lodash-es/mean.js","./meanBy.js":"../node_modules/lodash-es/meanBy.js","./memoize.js":"../node_modules/lodash-es/memoize.js","./merge.js":"../node_modules/lodash-es/merge.js","./mergeWith.js":"../node_modules/lodash-es/mergeWith.js","./method.js":"../node_modules/lodash-es/method.js","./methodOf.js":"../node_modules/lodash-es/methodOf.js","./min.js":"../node_modules/lodash-es/min.js","./minBy.js":"../node_modules/lodash-es/minBy.js","./mixin.js":"../node_modules/lodash-es/mixin.js","./multiply.js":"../node_modules/lodash-es/multiply.js","./negate.js":"../node_modules/lodash-es/negate.js","./next.js":"../node_modules/lodash-es/next.js","./noop.js":"../node_modules/lodash-es/noop.js","./now.js":"../node_modules/lodash-es/now.js","./nth.js":"../node_modules/lodash-es/nth.js","./nthArg.js":"../node_modules/lodash-es/nthArg.js","./omit.js":"../node_modules/lodash-es/omit.js","./omitBy.js":"../node_modules/lodash-es/omitBy.js","./once.js":"../node_modules/lodash-es/once.js","./orderBy.js":"../node_modules/lodash-es/orderBy.js","./over.js":"../node_modules/lodash-es/over.js","./overArgs.js":"../node_modules/lodash-es/overArgs.js","./overEvery.js":"../node_modules/lodash-es/overEvery.js","./overSome.js":"../node_modules/lodash-es/overSome.js","./pad.js":"../node_modules/lodash-es/pad.js","./padEnd.js":"../node_modules/lodash-es/padEnd.js","./padStart.js":"../node_modules/lodash-es/padStart.js","./parseInt.js":"../node_modules/lodash-es/parseInt.js","./partial.js":"../node_modules/lodash-es/partial.js","./partialRight.js":"../node_modules/lodash-es/partialRight.js","./partition.js":"../node_modules/lodash-es/partition.js","./pick.js":"../node_modules/lodash-es/pick.js","./pickBy.js":"../node_modules/lodash-es/pickBy.js","./plant.js":"../node_modules/lodash-es/plant.js","./property.js":"../node_modules/lodash-es/property.js","./propertyOf.js":"../node_modules/lodash-es/propertyOf.js","./pull.js":"../node_modules/lodash-es/pull.js","./pullAll.js":"../node_modules/lodash-es/pullAll.js","./pullAllBy.js":"../node_modules/lodash-es/pullAllBy.js","./pullAllWith.js":"../node_modules/lodash-es/pullAllWith.js","./pullAt.js":"../node_modules/lodash-es/pullAt.js","./random.js":"../node_modules/lodash-es/random.js","./range.js":"../node_modules/lodash-es/range.js","./rangeRight.js":"../node_modules/lodash-es/rangeRight.js","./rearg.js":"../node_modules/lodash-es/rearg.js","./reduce.js":"../node_modules/lodash-es/reduce.js","./reduceRight.js":"../node_modules/lodash-es/reduceRight.js","./reject.js":"../node_modules/lodash-es/reject.js","./remove.js":"../node_modules/lodash-es/remove.js","./repeat.js":"../node_modules/lodash-es/repeat.js","./replace.js":"../node_modules/lodash-es/replace.js","./rest.js":"../node_modules/lodash-es/rest.js","./result.js":"../node_modules/lodash-es/result.js","./reverse.js":"../node_modules/lodash-es/reverse.js","./round.js":"../node_modules/lodash-es/round.js","./sample.js":"../node_modules/lodash-es/sample.js","./sampleSize.js":"../node_modules/lodash-es/sampleSize.js","./set.js":"../node_modules/lodash-es/set.js","./setWith.js":"../node_modules/lodash-es/setWith.js","./shuffle.js":"../node_modules/lodash-es/shuffle.js","./size.js":"../node_modules/lodash-es/size.js","./slice.js":"../node_modules/lodash-es/slice.js","./snakeCase.js":"../node_modules/lodash-es/snakeCase.js","./some.js":"../node_modules/lodash-es/some.js","./sortBy.js":"../node_modules/lodash-es/sortBy.js","./sortedIndex.js":"../node_modules/lodash-es/sortedIndex.js","./sortedIndexBy.js":"../node_modules/lodash-es/sortedIndexBy.js","./sortedIndexOf.js":"../node_modules/lodash-es/sortedIndexOf.js","./sortedLastIndex.js":"../node_modules/lodash-es/sortedLastIndex.js","./sortedLastIndexBy.js":"../node_modules/lodash-es/sortedLastIndexBy.js","./sortedLastIndexOf.js":"../node_modules/lodash-es/sortedLastIndexOf.js","./sortedUniq.js":"../node_modules/lodash-es/sortedUniq.js","./sortedUniqBy.js":"../node_modules/lodash-es/sortedUniqBy.js","./split.js":"../node_modules/lodash-es/split.js","./spread.js":"../node_modules/lodash-es/spread.js","./startCase.js":"../node_modules/lodash-es/startCase.js","./startsWith.js":"../node_modules/lodash-es/startsWith.js","./stubArray.js":"../node_modules/lodash-es/stubArray.js","./stubFalse.js":"../node_modules/lodash-es/stubFalse.js","./stubObject.js":"../node_modules/lodash-es/stubObject.js","./stubString.js":"../node_modules/lodash-es/stubString.js","./stubTrue.js":"../node_modules/lodash-es/stubTrue.js","./subtract.js":"../node_modules/lodash-es/subtract.js","./sum.js":"../node_modules/lodash-es/sum.js","./sumBy.js":"../node_modules/lodash-es/sumBy.js","./tail.js":"../node_modules/lodash-es/tail.js","./take.js":"../node_modules/lodash-es/take.js","./takeRight.js":"../node_modules/lodash-es/takeRight.js","./takeRightWhile.js":"../node_modules/lodash-es/takeRightWhile.js","./takeWhile.js":"../node_modules/lodash-es/takeWhile.js","./tap.js":"../node_modules/lodash-es/tap.js","./template.js":"../node_modules/lodash-es/template.js","./templateSettings.js":"../node_modules/lodash-es/templateSettings.js","./throttle.js":"../node_modules/lodash-es/throttle.js","./thru.js":"../node_modules/lodash-es/thru.js","./times.js":"../node_modules/lodash-es/times.js","./toArray.js":"../node_modules/lodash-es/toArray.js","./toFinite.js":"../node_modules/lodash-es/toFinite.js","./toInteger.js":"../node_modules/lodash-es/toInteger.js","./toIterator.js":"../node_modules/lodash-es/toIterator.js","./toJSON.js":"../node_modules/lodash-es/toJSON.js","./toLength.js":"../node_modules/lodash-es/toLength.js","./toLower.js":"../node_modules/lodash-es/toLower.js","./toNumber.js":"../node_modules/lodash-es/toNumber.js","./toPairs.js":"../node_modules/lodash-es/toPairs.js","./toPairsIn.js":"../node_modules/lodash-es/toPairsIn.js","./toPath.js":"../node_modules/lodash-es/toPath.js","./toPlainObject.js":"../node_modules/lodash-es/toPlainObject.js","./toSafeInteger.js":"../node_modules/lodash-es/toSafeInteger.js","./toString.js":"../node_modules/lodash-es/toString.js","./toUpper.js":"../node_modules/lodash-es/toUpper.js","./transform.js":"../node_modules/lodash-es/transform.js","./trim.js":"../node_modules/lodash-es/trim.js","./trimEnd.js":"../node_modules/lodash-es/trimEnd.js","./trimStart.js":"../node_modules/lodash-es/trimStart.js","./truncate.js":"../node_modules/lodash-es/truncate.js","./unary.js":"../node_modules/lodash-es/unary.js","./unescape.js":"../node_modules/lodash-es/unescape.js","./union.js":"../node_modules/lodash-es/union.js","./unionBy.js":"../node_modules/lodash-es/unionBy.js","./unionWith.js":"../node_modules/lodash-es/unionWith.js","./uniq.js":"../node_modules/lodash-es/uniq.js","./uniqBy.js":"../node_modules/lodash-es/uniqBy.js","./uniqWith.js":"../node_modules/lodash-es/uniqWith.js","./uniqueId.js":"../node_modules/lodash-es/uniqueId.js","./unset.js":"../node_modules/lodash-es/unset.js","./unzip.js":"../node_modules/lodash-es/unzip.js","./unzipWith.js":"../node_modules/lodash-es/unzipWith.js","./update.js":"../node_modules/lodash-es/update.js","./updateWith.js":"../node_modules/lodash-es/updateWith.js","./upperCase.js":"../node_modules/lodash-es/upperCase.js","./upperFirst.js":"../node_modules/lodash-es/upperFirst.js","./value.js":"../node_modules/lodash-es/value.js","./valueOf.js":"../node_modules/lodash-es/valueOf.js","./values.js":"../node_modules/lodash-es/values.js","./valuesIn.js":"../node_modules/lodash-es/valuesIn.js","./without.js":"../node_modules/lodash-es/without.js","./words.js":"../node_modules/lodash-es/words.js","./wrap.js":"../node_modules/lodash-es/wrap.js","./wrapperAt.js":"../node_modules/lodash-es/wrapperAt.js","./wrapperChain.js":"../node_modules/lodash-es/wrapperChain.js","./wrapperReverse.js":"../node_modules/lodash-es/wrapperReverse.js","./wrapperValue.js":"../node_modules/lodash-es/wrapperValue.js","./xor.js":"../node_modules/lodash-es/xor.js","./xorBy.js":"../node_modules/lodash-es/xorBy.js","./xorWith.js":"../node_modules/lodash-es/xorWith.js","./zip.js":"../node_modules/lodash-es/zip.js","./zipObject.js":"../node_modules/lodash-es/zipObject.js","./zipObjectDeep.js":"../node_modules/lodash-es/zipObjectDeep.js","./zipWith.js":"../node_modules/lodash-es/zipWith.js","./lodash.default.js":"../node_modules/lodash-es/lodash.default.js"}],"../node_modules/vue-hot-reload-api/dist/index.js":[function(require,module,exports) {
+},{"./add.js":"../node_modules/lodash-es/add.js","./after.js":"../node_modules/lodash-es/after.js","./ary.js":"../node_modules/lodash-es/ary.js","./assign.js":"../node_modules/lodash-es/assign.js","./assignIn.js":"../node_modules/lodash-es/assignIn.js","./assignInWith.js":"../node_modules/lodash-es/assignInWith.js","./assignWith.js":"../node_modules/lodash-es/assignWith.js","./at.js":"../node_modules/lodash-es/at.js","./attempt.js":"../node_modules/lodash-es/attempt.js","./before.js":"../node_modules/lodash-es/before.js","./bind.js":"../node_modules/lodash-es/bind.js","./bindAll.js":"../node_modules/lodash-es/bindAll.js","./bindKey.js":"../node_modules/lodash-es/bindKey.js","./camelCase.js":"../node_modules/lodash-es/camelCase.js","./capitalize.js":"../node_modules/lodash-es/capitalize.js","./castArray.js":"../node_modules/lodash-es/castArray.js","./ceil.js":"../node_modules/lodash-es/ceil.js","./chain.js":"../node_modules/lodash-es/chain.js","./chunk.js":"../node_modules/lodash-es/chunk.js","./clamp.js":"../node_modules/lodash-es/clamp.js","./clone.js":"../node_modules/lodash-es/clone.js","./cloneDeep.js":"../node_modules/lodash-es/cloneDeep.js","./cloneDeepWith.js":"../node_modules/lodash-es/cloneDeepWith.js","./cloneWith.js":"../node_modules/lodash-es/cloneWith.js","./commit.js":"../node_modules/lodash-es/commit.js","./compact.js":"../node_modules/lodash-es/compact.js","./concat.js":"../node_modules/lodash-es/concat.js","./cond.js":"../node_modules/lodash-es/cond.js","./conforms.js":"../node_modules/lodash-es/conforms.js","./conformsTo.js":"../node_modules/lodash-es/conformsTo.js","./constant.js":"../node_modules/lodash-es/constant.js","./countBy.js":"../node_modules/lodash-es/countBy.js","./create.js":"../node_modules/lodash-es/create.js","./curry.js":"../node_modules/lodash-es/curry.js","./curryRight.js":"../node_modules/lodash-es/curryRight.js","./debounce.js":"../node_modules/lodash-es/debounce.js","./deburr.js":"../node_modules/lodash-es/deburr.js","./defaultTo.js":"../node_modules/lodash-es/defaultTo.js","./defaults.js":"../node_modules/lodash-es/defaults.js","./defaultsDeep.js":"../node_modules/lodash-es/defaultsDeep.js","./defer.js":"../node_modules/lodash-es/defer.js","./delay.js":"../node_modules/lodash-es/delay.js","./difference.js":"../node_modules/lodash-es/difference.js","./differenceBy.js":"../node_modules/lodash-es/differenceBy.js","./differenceWith.js":"../node_modules/lodash-es/differenceWith.js","./divide.js":"../node_modules/lodash-es/divide.js","./drop.js":"../node_modules/lodash-es/drop.js","./dropRight.js":"../node_modules/lodash-es/dropRight.js","./dropRightWhile.js":"../node_modules/lodash-es/dropRightWhile.js","./dropWhile.js":"../node_modules/lodash-es/dropWhile.js","./each.js":"../node_modules/lodash-es/each.js","./eachRight.js":"../node_modules/lodash-es/eachRight.js","./endsWith.js":"../node_modules/lodash-es/endsWith.js","./entries.js":"../node_modules/lodash-es/entries.js","./entriesIn.js":"../node_modules/lodash-es/entriesIn.js","./eq.js":"../node_modules/lodash-es/eq.js","./escape.js":"../node_modules/lodash-es/escape.js","./escapeRegExp.js":"../node_modules/lodash-es/escapeRegExp.js","./every.js":"../node_modules/lodash-es/every.js","./extend.js":"../node_modules/lodash-es/extend.js","./extendWith.js":"../node_modules/lodash-es/extendWith.js","./fill.js":"../node_modules/lodash-es/fill.js","./filter.js":"../node_modules/lodash-es/filter.js","./find.js":"../node_modules/lodash-es/find.js","./findIndex.js":"../node_modules/lodash-es/findIndex.js","./findKey.js":"../node_modules/lodash-es/findKey.js","./findLast.js":"../node_modules/lodash-es/findLast.js","./findLastIndex.js":"../node_modules/lodash-es/findLastIndex.js","./findLastKey.js":"../node_modules/lodash-es/findLastKey.js","./first.js":"../node_modules/lodash-es/first.js","./flatMap.js":"../node_modules/lodash-es/flatMap.js","./flatMapDeep.js":"../node_modules/lodash-es/flatMapDeep.js","./flatMapDepth.js":"../node_modules/lodash-es/flatMapDepth.js","./flatten.js":"../node_modules/lodash-es/flatten.js","./flattenDeep.js":"../node_modules/lodash-es/flattenDeep.js","./flattenDepth.js":"../node_modules/lodash-es/flattenDepth.js","./flip.js":"../node_modules/lodash-es/flip.js","./floor.js":"../node_modules/lodash-es/floor.js","./flow.js":"../node_modules/lodash-es/flow.js","./flowRight.js":"../node_modules/lodash-es/flowRight.js","./forEach.js":"../node_modules/lodash-es/forEach.js","./forEachRight.js":"../node_modules/lodash-es/forEachRight.js","./forIn.js":"../node_modules/lodash-es/forIn.js","./forInRight.js":"../node_modules/lodash-es/forInRight.js","./forOwn.js":"../node_modules/lodash-es/forOwn.js","./forOwnRight.js":"../node_modules/lodash-es/forOwnRight.js","./fromPairs.js":"../node_modules/lodash-es/fromPairs.js","./functions.js":"../node_modules/lodash-es/functions.js","./functionsIn.js":"../node_modules/lodash-es/functionsIn.js","./get.js":"../node_modules/lodash-es/get.js","./groupBy.js":"../node_modules/lodash-es/groupBy.js","./gt.js":"../node_modules/lodash-es/gt.js","./gte.js":"../node_modules/lodash-es/gte.js","./has.js":"../node_modules/lodash-es/has.js","./hasIn.js":"../node_modules/lodash-es/hasIn.js","./head.js":"../node_modules/lodash-es/head.js","./identity.js":"../node_modules/lodash-es/identity.js","./inRange.js":"../node_modules/lodash-es/inRange.js","./includes.js":"../node_modules/lodash-es/includes.js","./indexOf.js":"../node_modules/lodash-es/indexOf.js","./initial.js":"../node_modules/lodash-es/initial.js","./intersection.js":"../node_modules/lodash-es/intersection.js","./intersectionBy.js":"../node_modules/lodash-es/intersectionBy.js","./intersectionWith.js":"../node_modules/lodash-es/intersectionWith.js","./invert.js":"../node_modules/lodash-es/invert.js","./invertBy.js":"../node_modules/lodash-es/invertBy.js","./invoke.js":"../node_modules/lodash-es/invoke.js","./invokeMap.js":"../node_modules/lodash-es/invokeMap.js","./isArguments.js":"../node_modules/lodash-es/isArguments.js","./isArray.js":"../node_modules/lodash-es/isArray.js","./isArrayBuffer.js":"../node_modules/lodash-es/isArrayBuffer.js","./isArrayLike.js":"../node_modules/lodash-es/isArrayLike.js","./isArrayLikeObject.js":"../node_modules/lodash-es/isArrayLikeObject.js","./isBoolean.js":"../node_modules/lodash-es/isBoolean.js","./isBuffer.js":"../node_modules/lodash-es/isBuffer.js","./isDate.js":"../node_modules/lodash-es/isDate.js","./isElement.js":"../node_modules/lodash-es/isElement.js","./isEmpty.js":"../node_modules/lodash-es/isEmpty.js","./isEqual.js":"../node_modules/lodash-es/isEqual.js","./isEqualWith.js":"../node_modules/lodash-es/isEqualWith.js","./isError.js":"../node_modules/lodash-es/isError.js","./isFinite.js":"../node_modules/lodash-es/isFinite.js","./isFunction.js":"../node_modules/lodash-es/isFunction.js","./isInteger.js":"../node_modules/lodash-es/isInteger.js","./isLength.js":"../node_modules/lodash-es/isLength.js","./isMap.js":"../node_modules/lodash-es/isMap.js","./isMatch.js":"../node_modules/lodash-es/isMatch.js","./isMatchWith.js":"../node_modules/lodash-es/isMatchWith.js","./isNaN.js":"../node_modules/lodash-es/isNaN.js","./isNative.js":"../node_modules/lodash-es/isNative.js","./isNil.js":"../node_modules/lodash-es/isNil.js","./isNull.js":"../node_modules/lodash-es/isNull.js","./isNumber.js":"../node_modules/lodash-es/isNumber.js","./isObject.js":"../node_modules/lodash-es/isObject.js","./isObjectLike.js":"../node_modules/lodash-es/isObjectLike.js","./isPlainObject.js":"../node_modules/lodash-es/isPlainObject.js","./isRegExp.js":"../node_modules/lodash-es/isRegExp.js","./isSafeInteger.js":"../node_modules/lodash-es/isSafeInteger.js","./isSet.js":"../node_modules/lodash-es/isSet.js","./isString.js":"../node_modules/lodash-es/isString.js","./isSymbol.js":"../node_modules/lodash-es/isSymbol.js","./isTypedArray.js":"../node_modules/lodash-es/isTypedArray.js","./isUndefined.js":"../node_modules/lodash-es/isUndefined.js","./isWeakMap.js":"../node_modules/lodash-es/isWeakMap.js","./isWeakSet.js":"../node_modules/lodash-es/isWeakSet.js","./iteratee.js":"../node_modules/lodash-es/iteratee.js","./join.js":"../node_modules/lodash-es/join.js","./kebabCase.js":"../node_modules/lodash-es/kebabCase.js","./keyBy.js":"../node_modules/lodash-es/keyBy.js","./keys.js":"../node_modules/lodash-es/keys.js","./keysIn.js":"../node_modules/lodash-es/keysIn.js","./last.js":"../node_modules/lodash-es/last.js","./lastIndexOf.js":"../node_modules/lodash-es/lastIndexOf.js","./wrapperLodash.js":"../node_modules/lodash-es/wrapperLodash.js","./lowerCase.js":"../node_modules/lodash-es/lowerCase.js","./lowerFirst.js":"../node_modules/lodash-es/lowerFirst.js","./lt.js":"../node_modules/lodash-es/lt.js","./lte.js":"../node_modules/lodash-es/lte.js","./map.js":"../node_modules/lodash-es/map.js","./mapKeys.js":"../node_modules/lodash-es/mapKeys.js","./mapValues.js":"../node_modules/lodash-es/mapValues.js","./matches.js":"../node_modules/lodash-es/matches.js","./matchesProperty.js":"../node_modules/lodash-es/matchesProperty.js","./max.js":"../node_modules/lodash-es/max.js","./maxBy.js":"../node_modules/lodash-es/maxBy.js","./mean.js":"../node_modules/lodash-es/mean.js","./meanBy.js":"../node_modules/lodash-es/meanBy.js","./memoize.js":"../node_modules/lodash-es/memoize.js","./merge.js":"../node_modules/lodash-es/merge.js","./mergeWith.js":"../node_modules/lodash-es/mergeWith.js","./method.js":"../node_modules/lodash-es/method.js","./methodOf.js":"../node_modules/lodash-es/methodOf.js","./min.js":"../node_modules/lodash-es/min.js","./minBy.js":"../node_modules/lodash-es/minBy.js","./mixin.js":"../node_modules/lodash-es/mixin.js","./multiply.js":"../node_modules/lodash-es/multiply.js","./negate.js":"../node_modules/lodash-es/negate.js","./next.js":"../node_modules/lodash-es/next.js","./noop.js":"../node_modules/lodash-es/noop.js","./now.js":"../node_modules/lodash-es/now.js","./nth.js":"../node_modules/lodash-es/nth.js","./nthArg.js":"../node_modules/lodash-es/nthArg.js","./omit.js":"../node_modules/lodash-es/omit.js","./omitBy.js":"../node_modules/lodash-es/omitBy.js","./once.js":"../node_modules/lodash-es/once.js","./orderBy.js":"../node_modules/lodash-es/orderBy.js","./over.js":"../node_modules/lodash-es/over.js","./overArgs.js":"../node_modules/lodash-es/overArgs.js","./overEvery.js":"../node_modules/lodash-es/overEvery.js","./overSome.js":"../node_modules/lodash-es/overSome.js","./pad.js":"../node_modules/lodash-es/pad.js","./padEnd.js":"../node_modules/lodash-es/padEnd.js","./padStart.js":"../node_modules/lodash-es/padStart.js","./parseInt.js":"../node_modules/lodash-es/parseInt.js","./partial.js":"../node_modules/lodash-es/partial.js","./partialRight.js":"../node_modules/lodash-es/partialRight.js","./partition.js":"../node_modules/lodash-es/partition.js","./pick.js":"../node_modules/lodash-es/pick.js","./pickBy.js":"../node_modules/lodash-es/pickBy.js","./plant.js":"../node_modules/lodash-es/plant.js","./property.js":"../node_modules/lodash-es/property.js","./propertyOf.js":"../node_modules/lodash-es/propertyOf.js","./pull.js":"../node_modules/lodash-es/pull.js","./pullAll.js":"../node_modules/lodash-es/pullAll.js","./pullAllBy.js":"../node_modules/lodash-es/pullAllBy.js","./pullAllWith.js":"../node_modules/lodash-es/pullAllWith.js","./pullAt.js":"../node_modules/lodash-es/pullAt.js","./random.js":"../node_modules/lodash-es/random.js","./range.js":"../node_modules/lodash-es/range.js","./rangeRight.js":"../node_modules/lodash-es/rangeRight.js","./rearg.js":"../node_modules/lodash-es/rearg.js","./reduce.js":"../node_modules/lodash-es/reduce.js","./reduceRight.js":"../node_modules/lodash-es/reduceRight.js","./reject.js":"../node_modules/lodash-es/reject.js","./remove.js":"../node_modules/lodash-es/remove.js","./repeat.js":"../node_modules/lodash-es/repeat.js","./replace.js":"../node_modules/lodash-es/replace.js","./rest.js":"../node_modules/lodash-es/rest.js","./result.js":"../node_modules/lodash-es/result.js","./reverse.js":"../node_modules/lodash-es/reverse.js","./round.js":"../node_modules/lodash-es/round.js","./sample.js":"../node_modules/lodash-es/sample.js","./sampleSize.js":"../node_modules/lodash-es/sampleSize.js","./set.js":"../node_modules/lodash-es/set.js","./setWith.js":"../node_modules/lodash-es/setWith.js","./shuffle.js":"../node_modules/lodash-es/shuffle.js","./size.js":"../node_modules/lodash-es/size.js","./slice.js":"../node_modules/lodash-es/slice.js","./snakeCase.js":"../node_modules/lodash-es/snakeCase.js","./some.js":"../node_modules/lodash-es/some.js","./sortBy.js":"../node_modules/lodash-es/sortBy.js","./sortedIndex.js":"../node_modules/lodash-es/sortedIndex.js","./sortedIndexBy.js":"../node_modules/lodash-es/sortedIndexBy.js","./sortedIndexOf.js":"../node_modules/lodash-es/sortedIndexOf.js","./sortedLastIndex.js":"../node_modules/lodash-es/sortedLastIndex.js","./sortedLastIndexBy.js":"../node_modules/lodash-es/sortedLastIndexBy.js","./sortedLastIndexOf.js":"../node_modules/lodash-es/sortedLastIndexOf.js","./sortedUniq.js":"../node_modules/lodash-es/sortedUniq.js","./sortedUniqBy.js":"../node_modules/lodash-es/sortedUniqBy.js","./split.js":"../node_modules/lodash-es/split.js","./spread.js":"../node_modules/lodash-es/spread.js","./startCase.js":"../node_modules/lodash-es/startCase.js","./startsWith.js":"../node_modules/lodash-es/startsWith.js","./stubArray.js":"../node_modules/lodash-es/stubArray.js","./stubFalse.js":"../node_modules/lodash-es/stubFalse.js","./stubObject.js":"../node_modules/lodash-es/stubObject.js","./stubString.js":"../node_modules/lodash-es/stubString.js","./stubTrue.js":"../node_modules/lodash-es/stubTrue.js","./subtract.js":"../node_modules/lodash-es/subtract.js","./sum.js":"../node_modules/lodash-es/sum.js","./sumBy.js":"../node_modules/lodash-es/sumBy.js","./tail.js":"../node_modules/lodash-es/tail.js","./take.js":"../node_modules/lodash-es/take.js","./takeRight.js":"../node_modules/lodash-es/takeRight.js","./takeRightWhile.js":"../node_modules/lodash-es/takeRightWhile.js","./takeWhile.js":"../node_modules/lodash-es/takeWhile.js","./tap.js":"../node_modules/lodash-es/tap.js","./template.js":"../node_modules/lodash-es/template.js","./templateSettings.js":"../node_modules/lodash-es/templateSettings.js","./throttle.js":"../node_modules/lodash-es/throttle.js","./thru.js":"../node_modules/lodash-es/thru.js","./times.js":"../node_modules/lodash-es/times.js","./toArray.js":"../node_modules/lodash-es/toArray.js","./toFinite.js":"../node_modules/lodash-es/toFinite.js","./toInteger.js":"../node_modules/lodash-es/toInteger.js","./toIterator.js":"../node_modules/lodash-es/toIterator.js","./toJSON.js":"../node_modules/lodash-es/toJSON.js","./toLength.js":"../node_modules/lodash-es/toLength.js","./toLower.js":"../node_modules/lodash-es/toLower.js","./toNumber.js":"../node_modules/lodash-es/toNumber.js","./toPairs.js":"../node_modules/lodash-es/toPairs.js","./toPairsIn.js":"../node_modules/lodash-es/toPairsIn.js","./toPath.js":"../node_modules/lodash-es/toPath.js","./toPlainObject.js":"../node_modules/lodash-es/toPlainObject.js","./toSafeInteger.js":"../node_modules/lodash-es/toSafeInteger.js","./toString.js":"../node_modules/lodash-es/toString.js","./toUpper.js":"../node_modules/lodash-es/toUpper.js","./transform.js":"../node_modules/lodash-es/transform.js","./trim.js":"../node_modules/lodash-es/trim.js","./trimEnd.js":"../node_modules/lodash-es/trimEnd.js","./trimStart.js":"../node_modules/lodash-es/trimStart.js","./truncate.js":"../node_modules/lodash-es/truncate.js","./unary.js":"../node_modules/lodash-es/unary.js","./unescape.js":"../node_modules/lodash-es/unescape.js","./union.js":"../node_modules/lodash-es/union.js","./unionBy.js":"../node_modules/lodash-es/unionBy.js","./unionWith.js":"../node_modules/lodash-es/unionWith.js","./uniq.js":"../node_modules/lodash-es/uniq.js","./uniqBy.js":"../node_modules/lodash-es/uniqBy.js","./uniqWith.js":"../node_modules/lodash-es/uniqWith.js","./uniqueId.js":"../node_modules/lodash-es/uniqueId.js","./unset.js":"../node_modules/lodash-es/unset.js","./unzip.js":"../node_modules/lodash-es/unzip.js","./unzipWith.js":"../node_modules/lodash-es/unzipWith.js","./update.js":"../node_modules/lodash-es/update.js","./updateWith.js":"../node_modules/lodash-es/updateWith.js","./upperCase.js":"../node_modules/lodash-es/upperCase.js","./upperFirst.js":"../node_modules/lodash-es/upperFirst.js","./value.js":"../node_modules/lodash-es/value.js","./valueOf.js":"../node_modules/lodash-es/valueOf.js","./values.js":"../node_modules/lodash-es/values.js","./valuesIn.js":"../node_modules/lodash-es/valuesIn.js","./without.js":"../node_modules/lodash-es/without.js","./words.js":"../node_modules/lodash-es/words.js","./wrap.js":"../node_modules/lodash-es/wrap.js","./wrapperAt.js":"../node_modules/lodash-es/wrapperAt.js","./wrapperChain.js":"../node_modules/lodash-es/wrapperChain.js","./wrapperReverse.js":"../node_modules/lodash-es/wrapperReverse.js","./wrapperValue.js":"../node_modules/lodash-es/wrapperValue.js","./xor.js":"../node_modules/lodash-es/xor.js","./xorBy.js":"../node_modules/lodash-es/xorBy.js","./xorWith.js":"../node_modules/lodash-es/xorWith.js","./zip.js":"../node_modules/lodash-es/zip.js","./zipObject.js":"../node_modules/lodash-es/zipObject.js","./zipObjectDeep.js":"../node_modules/lodash-es/zipObjectDeep.js","./zipWith.js":"../node_modules/lodash-es/zipWith.js","./lodash.default.js":"../node_modules/lodash-es/lodash.default.js"}],"../../../../../../../Users/USER/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+var bundleURL = null;
+
+function getBundleURLCached() {
+  if (!bundleURL) {
+    bundleURL = getBundleURL();
+  }
+
+  return bundleURL;
+}
+
+function getBundleURL() {
+  // Attempt to find the URL of the current script and use that as the base URL
+  try {
+    throw new Error();
+  } catch (err) {
+    var matches = ('' + err.stack).match(/(https?|file|ftp|chrome-extension|moz-extension):\/\/[^)\n]+/g);
+
+    if (matches) {
+      return getBaseURL(matches[0]);
+    }
+  }
+
+  return '/';
+}
+
+function getBaseURL(url) {
+  return ('' + url).replace(/^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)\/[^/]+$/, '$1') + '/';
+}
+
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+},{}],"../../../../../../../Users/USER/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+var bundle = require('./bundle-url');
+
+function updateLink(link) {
+  var newLink = link.cloneNode();
+
+  newLink.onload = function () {
+    link.remove();
+  };
+
+  newLink.href = link.href.split('?')[0] + '?' + Date.now();
+  link.parentNode.insertBefore(newLink, link.nextSibling);
+}
+
+var cssTimeout = null;
+
+function reloadCSS() {
+  if (cssTimeout) {
+    return;
+  }
+
+  cssTimeout = setTimeout(function () {
+    var links = document.querySelectorAll('link[rel="stylesheet"]');
+
+    for (var i = 0; i < links.length; i++) {
+      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
+        updateLink(links[i]);
+      }
+    }
+
+    cssTimeout = null;
+  }, 50);
+}
+
+module.exports = reloadCSS;
+},{"./bundle-url":"../../../../../../../Users/USER/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"../node_modules/vue-hot-reload-api/dist/index.js":[function(require,module,exports) {
 var Vue // late bind
 var version
 var map = Object.create(null)
@@ -43036,7 +43103,7 @@ if (inBrowser) {
 
 var _default = Vue;
 exports.default = _default;
-},{}],"components/Foot.vue":[function(require,module,exports) {
+},{}],"editor/Foot.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -43087,14 +43154,14 @@ var _default = {
   }
 };
 exports.default = _default;
-        var $e621ae = exports.default || module.exports;
+        var $27a332 = exports.default || module.exports;
       
-      if (typeof $e621ae === 'function') {
-        $e621ae = $e621ae.options;
+      if (typeof $27a332 === 'function') {
+        $27a332 = $27a332.options;
       }
     
         /* template */
-        Object.assign($e621ae, (function () {
+        Object.assign($27a332, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -43168,16 +43235,20 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$e621ae', $e621ae);
+            api.createRecord('$27a332', $27a332);
           } else {
-            api.reload('$e621ae', $e621ae);
+            api.reload('$27a332', $27a332);
           }
         }
 
         
+        var reloadCSS = require('_css_loader');
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      
       }
     })();
-},{"vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.runtime.esm.js"}],"components/ArrayTable.vue":[function(require,module,exports) {
+},{"_css_loader":"../../../../../../../Users/USER/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.runtime.esm.js"}],"editor/ArrayTable.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -43291,14 +43362,14 @@ var _default = {
   }
 };
 exports.default = _default;
-        var $f1479f = exports.default || module.exports;
+        var $c8d098 = exports.default || module.exports;
       
-      if (typeof $f1479f === 'function') {
-        $f1479f = $f1479f.options;
+      if (typeof $c8d098 === 'function') {
+        $c8d098 = $c8d098.options;
       }
     
         /* template */
-        Object.assign($f1479f, (function () {
+        Object.assign($c8d098, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -43463,16 +43534,16 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$f1479f', $f1479f);
+            api.createRecord('$c8d098', $c8d098);
           } else {
-            api.reload('$f1479f', $f1479f);
+            api.reload('$c8d098', $c8d098);
           }
         }
 
         
       }
     })();
-},{"./Foot.vue":"components/Foot.vue","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.runtime.esm.js"}],"components/ObjectTable.vue":[function(require,module,exports) {
+},{"./Foot.vue":"editor/Foot.vue","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.runtime.esm.js"}],"editor/ObjectTable.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -43573,14 +43644,14 @@ var _default = {
   }
 };
 exports.default = _default;
-        var $cf949a = exports.default || module.exports;
+        var $dd9ea2 = exports.default || module.exports;
       
-      if (typeof $cf949a === 'function') {
-        $cf949a = $cf949a.options;
+      if (typeof $dd9ea2 === 'function') {
+        $dd9ea2 = $dd9ea2.options;
       }
     
         /* template */
-        Object.assign($cf949a, (function () {
+        Object.assign($dd9ea2, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -43785,16 +43856,16 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$cf949a', $cf949a);
+            api.createRecord('$dd9ea2', $dd9ea2);
           } else {
-            api.reload('$cf949a', $cf949a);
+            api.reload('$dd9ea2', $dd9ea2);
           }
         }
 
         
       }
     })();
-},{"./ArrayTable.vue":"components/ArrayTable.vue","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.runtime.esm.js"}],"components/JsonEditor.vue":[function(require,module,exports) {
+},{"./ArrayTable.vue":"editor/ArrayTable.vue","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.runtime.esm.js"}],"editor/Editor.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -43836,12 +43907,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 //
 //
-var defaults = {
-  isKeysEditable: true,
-  isValuesEditable: true,
-  isMutatable: true,
-  isSortable: true
-};
 var _default = {
   components: {
     ObjectTable: _ObjectTable.default,
@@ -43851,7 +43916,6 @@ var _default = {
     value: Object,
     options: Object,
     label: {
-      type: String,
       default: 'Root'
     }
   },
@@ -43859,15 +43923,29 @@ var _default = {
     return {
       data: null,
       path: [],
-      settings: Object.assign({}, defaults, this.options)
+      settings: Object.assign({}, {
+        isKeysEditable: true,
+        isValuesEditable: true,
+        isMutatable: true,
+        isSortable: true
+      }, this.options)
     };
   },
   computed: {
     currentObject: function currentObject() {
       var object = this.data;
-      this.path.forEach(function (key) {
-        object = object[key];
-      });
+
+      for (var i = 0; i < this.path.length; i++) {
+        var key = this.path[i];
+
+        if (object[key]) {
+          object = object[key];
+        } else {
+          this.path.splice(i);
+          break;
+        }
+      }
+
       return object;
     },
     displayPath: function displayPath() {
@@ -43916,14 +43994,14 @@ var _default = {
   }
 };
 exports.default = _default;
-        var $b63049 = exports.default || module.exports;
+        var $3633a5 = exports.default || module.exports;
       
-      if (typeof $b63049 === 'function') {
-        $b63049 = $b63049.options;
+      if (typeof $3633a5 === 'function') {
+        $3633a5 = $3633a5.options;
       }
     
         /* template */
-        Object.assign($b63049, (function () {
+        Object.assign($3633a5, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -43952,32 +44030,33 @@ exports.default = _default;
             [
               _vm._l(_vm.displayPath, function(entry) {
                 return [
-                  entry.index < _vm.path.length - 1
-                    ? [
-                        _c(
-                          "button",
-                          {
-                            staticClass: "k-je-label-button",
-                            on: {
-                              click: function($event) {
-                                return _vm.openPath(entry.index)
-                              }
-                            }
-                          },
-                          [
-                            _vm._v(
-                              "\n            " +
-                                _vm._s(entry.name) +
-                                "\n          "
-                            )
+                  _c(
+                    "div",
+                    { key: entry.index, staticClass: "k-je-crumb" },
+                    [
+                      entry.index < _vm.path.length - 1
+                        ? [
+                            _c(
+                              "button",
+                              {
+                                staticClass: "k-je-label-button",
+                                on: {
+                                  click: function($event) {
+                                    return _vm.openPath(entry.index)
+                                  }
+                                }
+                              },
+                              [_vm._v(_vm._s(entry.name))]
+                            ),
+                            _vm._v(" "),
+                            _c("span", { staticClass: "k-je-separator" }, [
+                              _vm._v("/")
+                            ])
                           ]
-                        ),
-                        _vm._v(" "),
-                        _c("span", { staticClass: "k-je-separator" }, [
-                          _vm._v("/")
-                        ])
-                      ]
-                    : _c("span", [_vm._v(_vm._s(entry.name))])
+                        : _c("span", [_vm._v(_vm._s(entry.name))])
+                    ],
+                    2
+                  )
                 ]
               })
             ],
@@ -44015,28 +44094,164 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$b63049', $b63049);
+            api.createRecord('$3633a5', $3633a5);
           } else {
-            api.reload('$b63049', $b63049);
+            api.reload('$3633a5', $3633a5);
+          }
+        }
+
+        
+        var reloadCSS = require('_css_loader');
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      
+      }
+    })();
+},{"lodash-es":"../node_modules/lodash-es/lodash.js","./ObjectTable.vue":"editor/ObjectTable.vue","./ArrayTable.vue":"editor/ArrayTable.vue","_css_loader":"../../../../../../../Users/USER/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.runtime.esm.js"}],"Field.vue":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _lodashEs = require("lodash-es");
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+var _default = {
+  props: {
+    value: Object,
+    label: String,
+    array: {
+      // Saved value should be an array?
+      default: false
+    },
+    keys: {
+      // Edit object keys?
+      default: false
+    },
+    values: {
+      // Edit values?
+      default: true
+    },
+    mutate: {
+      // Add/remove entries?
+      default: true
+    },
+    sort: {
+      // Allow entry reordering?
+      default: true
+    }
+  },
+  data: function data() {
+    return {
+      data: null,
+      options: {
+        isKeysEditable: this.keys,
+        isValuesEditable: this.values,
+        isMutatable: this.mutate,
+        isSortable: this.sort
+      }
+    };
+  },
+  methods: {
+    input: function input() {
+      this.$emit('input', this.data);
+    }
+  },
+  watch: {
+    value: {
+      immediate: true,
+      handler: function handler(value) {
+        var isArray = Array.isArray(value);
+        var isObject = value && _typeof(value) === 'object' && !isArray;
+
+        if (this.array) {
+          if (!isArray) {
+            value = [];
+          }
+        } else if (!isObject) {
+          value = {};
+        }
+
+        this.data = (0, _lodashEs.cloneDeep)(value);
+      }
+    }
+  }
+};
+exports.default = _default;
+        var $5b1980 = exports.default || module.exports;
+      
+      if (typeof $5b1980 === 'function') {
+        $5b1980 = $5b1980.options;
+      }
+    
+        /* template */
+        Object.assign($5b1980, (function () {
+          var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("k-json-editor", {
+    attrs: { label: _vm.label, options: _vm.options },
+    on: { input: _vm.input },
+    model: {
+      value: _vm.data,
+      callback: function($$v) {
+        _vm.data = $$v
+      },
+      expression: "data"
+    }
+  })
+}
+var staticRenderFns = []
+render._withStripped = true
+
+          return {
+            render: render,
+            staticRenderFns: staticRenderFns,
+            _compiled: true,
+            _scopeId: null,
+            functional: undefined
+          };
+        })());
+      
+    /* hot reload */
+    (function () {
+      if (module.hot) {
+        var api = require('vue-hot-reload-api');
+        api.install(require('vue'));
+        if (api.compatible) {
+          module.hot.accept();
+          if (!module.hot.data) {
+            api.createRecord('$5b1980', $5b1980);
+          } else {
+            api.reload('$5b1980', $5b1980);
           }
         }
 
         
       }
     })();
-},{"lodash-es":"../node_modules/lodash-es/lodash.js","./ObjectTable.vue":"components/ObjectTable.vue","./ArrayTable.vue":"components/ArrayTable.vue","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.runtime.esm.js"}],"index.js":[function(require,module,exports) {
+},{"lodash-es":"../node_modules/lodash-es/lodash.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.runtime.esm.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
-var _JsonEditor = _interopRequireDefault(require("./components/JsonEditor.vue"));
+var _Editor = _interopRequireDefault(require("./editor/Editor.vue"));
+
+var _Field = _interopRequireDefault(require("./Field.vue"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 panel.plugin('oblik/json', {
   components: {
-    'k-json-editor': _JsonEditor.default
+    'k-json-editor': _Editor.default
+  },
+  fields: {
+    json: _Field.default
   }
 });
-},{"./components/JsonEditor.vue":"components/JsonEditor.vue"}],"../../../../../../../Users/USER/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./editor/Editor.vue":"editor/Editor.vue","./Field.vue":"Field.vue"}],"../../../../../../../Users/USER/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -44064,7 +44279,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59496" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61173" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

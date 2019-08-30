@@ -1,7 +1,11 @@
-import JsonEditor from './components/JsonEditor.vue'
+import Editor from './editor/Editor.vue'
+import Field from './Field.vue'
 
 panel.plugin('oblik/json', {
   components: {
-    'k-json-editor': JsonEditor
+    'k-json-editor': Editor
+  },
+  fields: {
+    json: Field
   }
 })
