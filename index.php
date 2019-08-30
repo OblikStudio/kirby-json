@@ -30,5 +30,8 @@ Kirby::plugin('oblik/json', [
                 return $value;
             }
         ]
+    ],
+    'translations' => [
+        'en' => include 'localization/en.php'
     ]
 ]);
