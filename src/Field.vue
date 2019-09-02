@@ -25,7 +25,7 @@ export default {
       default: true
     },
     mutate: { // Add/remove entries?
-      default: true
+      default: false
     },
     sort: { // Allow entry reordering?
       default: true
