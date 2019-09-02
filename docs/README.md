@@ -57,10 +57,10 @@ The `options` you can pass to the component:
 
 ```json
 {
-  isKeysEditable: true,
-  isValuesEditable: true,
-  isMutatable: true,
-  isSortable: true
+  "isKeysEditable": true,
+  "isValuesEditable": true,
+  "isMutatable": true,
+  "isSortable": true
 }
 ```
 
