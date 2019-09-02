@@ -4,7 +4,7 @@ Kirby JSON field and JSON editor Vue component.
 
 ## Installation
 
-With Composer:
+With [Composer](https://packagist.org/packages/oblik/kirby-json):
 
 ```
 composer require oblik/kirby-json
@@ -52,5 +52,7 @@ If you're building a plugin and you need to allow the user to edit JSON, you can
   ></k-json-editor>
 </template>
 ```
+
+The `options` you can pass to the component are the same as the ones you can use in the field blueprint described above.
 
 ![JSON editor component](editor.png)
