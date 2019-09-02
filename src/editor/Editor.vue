@@ -15,12 +15,18 @@
     </header>
 
     <component
+      v-if="!isEmpty(object) || settings.isMutatable"
       :is="isArray(object) ? 'ArrayTable' : 'ObjectTable'"
       :settings="settings"
       v-model="object"
       @input="input"
       @open="openKey"
     ></component>
+    <k-box
+      v-else
+      theme="info"
+      :text="$t('oblik.json.message.empty')"
+    />
   </k-field>
 </template>
 
@@ -119,6 +125,13 @@ export default {
     },
     input (value) {
       this.$emit('input', this.data)
+    },
+    isEmpty (value) {
+      if (value && typeof value === 'object') {
+        return !Object.keys(value).length
+      } else {
+        return null
+      }
     }
   },
   watch: {

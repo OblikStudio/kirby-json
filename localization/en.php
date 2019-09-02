@@ -6,5 +6,6 @@ return [
 	'oblik.json.array' => 'Array',
 	'oblik.json.object' => 'Object',
 	'oblik.json.loading' => 'Loading',
-	'oblik.json.values' => 'values',
+    'oblik.json.values' => 'values',
+    'oblik.json.message.empty' => 'Value empty and not editable.'
 ];
