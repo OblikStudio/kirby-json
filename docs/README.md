@@ -53,6 +53,15 @@ If you're building a plugin and you need to allow the user to edit JSON, you can
 </template>
 ```
 
-The `options` you can pass to the component are the same as the ones you can use in the field blueprint described above.
+The `options` you can pass to the component:
+
+```json
+{
+  isKeysEditable: true,
+  isValuesEditable: true,
+  isMutatable: true,
+  isSortable: true
+}
+```
 
 ![JSON editor component](editor.png)
