@@ -2,6 +2,8 @@
 
 Kirby JSON field and JSON editor Vue component.
 
+![JSON editor component](editor.png)
+
 ## Installation
 
 With [Composer](https://packagist.org/packages/oblik/kirby-json):
@@ -63,5 +65,3 @@ The `options` you can pass to the component:
   "isSortable": true
 }
 ```
-
-![JSON editor component](editor.png)
