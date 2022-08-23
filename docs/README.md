@@ -4,6 +4,10 @@ Kirby JSON field and JSON editor Vue component.
 
 ![JSON editor component](editor.png)
 
+## ⚠ Deprecated!
+
+If your user has to manually edit JSON, you're probably doing something wrong. Even if they _have to_ deal with JSON, it would probably be much better to give them a text field, where they could just write it like anyone else would, rather than providing a GUI. Thus, it makes no sense to have a JSON field.
+
 ## Installation
 
 With [Composer](https://packagist.org/packages/oblik/kirby-json):
